@@ -1,22 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --breakpoint-*: initial;
-  --breakpoint-sm: 425px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 1024px;
-  --breakpoint-xl: 1366px;
-  --breakpoint-2xl: 1440px;
-  --breakpoint-3xl: 1920px;
-
   --color-primary-red: #ea1e1e;
   --color-highlight-red: #ff4672;
   --color-border-red: #ea1e1e25;
   --color-box-green: #0fa35360;
   --color-border-green: #0fa353;
-  --color-box-background: #322b32;
+  --color-box-background: #2d252d;
   --color-box-background-darker: #171117;
   --color-fade-modal: #080617e6;
+  --color-primary-white: #f1f1f1;
+  --color-background: #111111;
 
   --font-karantina: Karantina, sans-serif;
   --font-inter: Inter, sans-serif;
@@ -51,15 +45,6 @@
 
   --shadow-red: 0 0 50px 0 #ea1e1e80;
 }
-
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
   *,
   ::after,
@@ -67,6 +52,10 @@
   ::backdrop,
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
+  }
+
+  body {
+    font-family: var(--font-inter);
   }
 }
 

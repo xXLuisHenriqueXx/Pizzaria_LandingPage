@@ -1,16 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-red: #ea1e1e;
+  --color-primary-red: #e9204f;
   --color-highlight-red: #ff4672;
-  --color-border-red: #ea1e1e25;
-  --color-box-green: #0fa35360;
-  --color-border-green: #0fa353;
-  --color-box-background: #2d252d;
-  --color-box-background-darker: #171117;
+  --color-primary-white: #f3f3f3;
+  --color-background-card: #222322;
+  --color-background: #1b1b1b;
   --color-fade-modal: #080617e6;
-  --color-primary-white: #f1f1f1;
-  --color-background: #111111;
 
   --font-karantina: Karantina, sans-serif;
   --font-inter: Inter, sans-serif;
@@ -24,26 +20,7 @@
   --background-image-main: url("/src/assets/backgrounds/main_background.svg");
   --background-image-header: url("/src/assets/backgrounds/header_background.svg");
 
-  --width-400: 25rem;
-  --widt-450: 28.125rem;
-  --width-500: 31.25rem;
-  --width-550: 34.375rem;
-  --width-600: 37.5rem;
-  --width-700: 43rem;
-  --width-800: 50rem;
-
-  --height-150: 9.375rem;
-  --height-200: 12.5rem;
-  --height-250: 15.625rem;
-  --height-300: 18.75rem;
-  --height-400: 25rem;
-  --height-450: 28.125rem;
-  --height-500: 31.25rem;
-  --height-600: 37.5rem;
-
-  --padding-42: 10.5rem;
-
-  --shadow-red: 0 0 50px 0 #ea1e1e80;
+  --shadow-red: 0 0 50px 0 #e9204f80;
 }
 @layer base {
   *,
@@ -56,6 +33,11 @@
 
   body {
     font-family: var(--font-inter);
+  }
+
+  html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
 }
 

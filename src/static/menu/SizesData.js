@@ -1,6 +1,6 @@
-import pizzaBroto from "../assets/sizes/pizza_broto.png";
-import pizzaMedia from "../assets/sizes/pizza_media.png";
-import pizzaFamilia from "../assets/sizes/pizza_familia.png";
+import pizzaBroto from "../../assets/sizes/pizza_broto.png";
+import pizzaMedia from "../../assets/sizes/pizza_media.png";
+import pizzaFamilia from "../../assets/sizes/pizza_familia.png";
 
 export const sizesData = [
   {

@@ -25,7 +25,7 @@ export const homeData = {
       id: 1,
       icon: Pizza,
       text: "Ver Cardapio",
-      link: "/cardapio",
+      link: "/menu",
       variant: "default",
     },
   ],

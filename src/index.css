@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-red: #e9204f;
-  --color-highlight-red: #ff4672;
-  --color-primary-white: #f3f3f3;
-  --color-background-card: #222322;
+  --color-primary: #e9204f;
+  --color-highlight: #ff4672;
+  --color-foreground: #f3f3f3;
+  --color-card: #222322;
   --color-background: #1b1b1b;
-  --color-fade-modal: #080617e6;
+  --color-fade: #080617e6;
 
   --font-karantina: Karantina, sans-serif;
   --font-inter: Inter, sans-serif;
@@ -33,6 +33,8 @@
 
   body {
     font-family: var(--font-inter);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
   }
 
   html {

@@ -1,19 +1,37 @@
+import { tv } from "tailwind-variants";
+
 import Container from "./_components/Container";
-import IntroductionText from "./_components/IntroductionText";
+import Header from "./_components/Header";
+import Info from "./_components/Info";
+import Buttons from "./_components/Buttons";
 
-import PizzaHome from "../../assets/pizza_home.png";
+import { homeData } from "../../static/home/homeData";
 
-export default function Home() {
+const styles = tv({
+  slots: {
+    container: "flex flex-col items-center gap-y-12 w-full max-w-xl z-2",
+    image: "hidden lg:block w-full max-w-xl z-2",
+  },
+});
+
+const { container, image: styleImage } = styles();
+
+const Home = () => {
+  const { image } = homeData;
+
   return (
     <Container>
-      <IntroductionText />
+      <section className={container()}>
+        <Header />
 
-      <img
-        className="hidden lg:block max-w-lg hover:scale-[1.025] cursor-pointer transition-all duration-300 z-10"
-        src={PizzaHome}
-        alt="Imagem de uma pizza"
-        loading="lazy"
-      />
+        <Info />
+
+        <Buttons />
+      </section>
+
+      <img className={styleImage()} src={image} alt="Pizza" loading="lazy" />
     </Container>
   );
-}
+};
+
+export default Home;
